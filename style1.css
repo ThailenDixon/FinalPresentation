@@ -1,0 +1,153 @@
+/* Global Styles */
+body {
+    background-color: #0f1923; /* Dark background for Valorant theme */
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4655;
+    padding: 6px 16px; /* Reduced padding */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 1000;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ff4655;
+}
+
+/* Header Logo */
+header img {
+    width: 120px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 50%; /* Circular logo */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the logo fills the space properly */
+    border: 3px solid #ff4655; /* Valorant red border */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 10px; /* Move text to the left slightly */
+}
+
+nav ul li {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Existing styles remain unchanged */
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    color: #ff4655; /* Valorant red on hover */
+    background-color: rgba(255, 70, 85, 0.2); /* Subtle background highlight */
+    border-radius: 4px; /* Rounded edges for background */
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px 20px; /* Padding to prevent overlap with fixed header */
+    text-align: center;
+}
+
+main a.button {
+    display: inline-block;
+    background-color: #ff4655;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main a.button:hover {
+    background-color: #e03e4c; /* Slightly darker red on hover */
+}
+/* Agent Cards Section */
+.agent-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.agent-card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    background-color: #1f2937; /* Slightly dark background for card */
+}
+
+.agent-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Agent Images */
+.agent-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px;
+    object-fit: cover; /* Ensure the image fills the space properly */
+    border: 3px solid #ff4655; /* Valorant red border */
+}
+
+/* Agent Name and Description */
+.agent-card strong {
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ff4655; /* Valorant red */
+}
+
+.agent-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #ff4655;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: white;
+}
