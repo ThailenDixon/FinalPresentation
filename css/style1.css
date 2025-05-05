@@ -71,6 +71,10 @@ nav ul li a:hover {
     background-color: rgba(255, 70, 85, 0.2); /* Subtle background highlight */
     border-radius: 4px; /* Rounded edges for background */
 }
+nav ul li a.active {
+    background-color: #e03e4c; /* Slightly darker red for the active link */
+    color: white; /* Keep the text white when active */
+}
 
 /* Main Content */
 main {
@@ -151,3 +155,4 @@ footer {
     font-size: 14px;
     color: white;
 }
+
