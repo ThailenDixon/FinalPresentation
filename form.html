@@ -1,4 +1,4 @@
-<<!-- form.html -->
+<!-- form.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +11,14 @@
     <meta name="robots" content="index, follow">
     <title>Valorant Website - Contact</title>
     <link rel="stylesheet" href="css/style1.css">
+
 </head>
 <body>
+    <h1>Contact Us</h1>
+</body>
+</html>
     <header>
-        <img src="logo.png" alt="Valorant Logo">
+        <img src="images/logo.png" alt="Valorant Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -57,5 +61,25 @@
     <footer>
         <p>About | Contact | Privacy Policy | Social Media</p>
     </footer>
+    <script>
+        
+        // JavaScript to add "active" class to the current page's nav link
+window.onload = function() {
+    // Get the current page URL
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Select all the navigation links
+    const navLinks = document.querySelectorAll("nav ul li a");
+
+    // Loop through each link and add the "active" class to the current page link
+    navLinks.forEach(link => {
+        // Compare the link's href with the current page URL
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+};
+
+      </script>
 </body>
 </html>
