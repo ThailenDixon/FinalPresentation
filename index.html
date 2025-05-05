@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Valorant Logo">
+        <img src="images/logo.png" alt="Valorant Logo">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,7 +27,8 @@
         <section>
             <h1>What is Valorant?</h1>
             <p>Valorant is a competitive 5v5 tactical shooter developed by Riot Games. Players choose agents with unique abilities to battle in various game modes.</p>
-            <a href="#" class="button">Play Now</a>
+            <a href="#" onclick="goToValorant()" class="button">Play Now</a>
+
             <a href="#" class="button">Learn More</a>
         </section>
 
@@ -45,5 +46,11 @@
     <footer>
         <p>About | Contact | Privacy Policy | Social Media</p>
     </footer>
+    <script>
+        function goToValorant() {
+          window.open("https://playvalorant.com", "_blank");
+        }
+      </script>
+      
 </body>
 </html>
